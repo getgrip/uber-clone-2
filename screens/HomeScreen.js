@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import tw from 'twrnc';
 import NavOptions from '../component/NavOptions';
+import NavFavorites from '../component/NavFavorites';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { GOOGLE_MAPS_API_KEY } from '@env';
 import { useDispatch } from 'react-redux';
@@ -65,6 +66,7 @@ const HomeScreen = () => {
                     }}
                 />
                 <NavOptions />
+                <NavFavorites/>
             </View>
         </SafeAreaView>
     )
