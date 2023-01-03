@@ -46,12 +46,13 @@ const NavigateCard = () => {
 
             <View style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-100`}>
                 <TouchableOpacity
-                    onPress={()=> navigation.navigate("RideOptionsCard")}
+                    onPress={() => navigation.navigate("RideOptionsCard")}
                     style={tw`flex flex-row justify-between bg-black px-4 py-3 rounded-full w-24`}>
                     <Icon name="car" type="font-awesome" color="white" size={16} />
                     <Text style={tw`text-white text-center`}>Rides</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={tw`flex flex-row justify-between px-4 py-3 rounded-full w-24`}>
+                <TouchableOpacity
+                    style={tw`flex flex-row justify-between px-4 py-3 rounded-full w-24`}>
                     <Icon name="fast-food-outline" type="ionicon" color="black" size={16} />
                     <Text style={tw`text-center`}>Eats</Text>
                 </TouchableOpacity>
